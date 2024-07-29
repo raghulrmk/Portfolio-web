@@ -1,0 +1,147 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+body {
+    background-color:#080808;
+    color:#fff;
+}
+.my-img {
+    width:100%;
+    height:100vh;
+    background-image: url(images/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+.logo {
+    width:120px;
+}
+.container1 {
+    padding:10px 10% 10px 10%; 
+    
+    
+}
+nav {
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: center;
+  
+}
+nav ul li{
+    display:inline-block;
+    margin:5px 20px;
+    list-style: none;
+    margin-bottom: 15px;
+
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    color:#fff;
+    position:relative;
+    cursor:pointer;
+}
+nav ul li a::after{
+    content: "";
+    position: absolute; 
+    left: 0; 
+    bottom: -3px; 
+    width: 0; 
+    height: 2px; 
+    background:red;
+    transition: 0.5s;
+}
+nav ul li a:hover::after {
+    width:100%;
+}
+.small-intro {
+    margin-top:20%;
+}
+.role1 {
+    font-family:arial;
+    font-size:30px;
+    margin-bottom: 3%;
+}
+.name2 {
+    margin-top:1.5%;
+}
+.name1,.name2 {
+    
+    font-weight:bold;
+    font-size:45px;
+    font-weight: bold;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.name1 span {
+    color:red;
+}
+/*---------about----------*/
+.about {
+    width:100%;
+    height:100vh;
+}
+.container2 {
+    padding:80px 8%;
+}
+.row {
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.column1 {
+    flex-basis:35%;
+}
+.img {
+    width:100%;
+    border-radius: 15px;
+}
+.column2 {
+    flex-basis:55%;
+    display:flex;
+    flex-direction:column;
+    gap:3%;
+}
+.row1 {
+    font-size:20px;
+    font-weight:bold;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:#ababab;
+}
+.row2,.row3 {
+    margin-top:4%;
+}
+.about-me {
+    color:silver;
+}
+.row3  {
+    display:flex;
+}
+.row3 p {
+    margin-right:25px;
+    font-weight:bold;
+    font-size:18px;
+    cursor:pointer;
+    position:relative;
+}
+.row3 p::after {
+    content:'';
+    width:0;
+    height:2px;
+    position:absolute;
+    background:silver;
+    left:0;
+    bottom:-5px;
+    transition:0.5s;
+}
+.row3 p:hover::after {
+    width:100%;
+}
+
+
